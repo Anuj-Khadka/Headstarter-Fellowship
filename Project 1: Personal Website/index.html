@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="A portfolio of a curious developer and student, Anuj Khadka" />
+  <meta name="robots" content="index" />
+  <meta name="author" content="Anuj Khadka" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anuj Khadka | Portfolio" />
+  <meta property="og:url" content="http://anuj-khadka.com.np/" />
+  <meta property="og:image" content="https://www.anuj-khadka.com.np/imgs/avatar.jpg" />
+  <link rel="canonical" href="https://anujkhadka.com" />
+  <link rel="canonical" href="https://anujkhadka.com.np" />
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png" />
+  <link rel="icon" type="image/png" href="../assets/imgs/favicon.png" />
+  <title>Anuj Khadka | Portfolio</title>
+
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
+  <!-- Bootstrap + anujkhadka main styles -->
+  <link rel="stylesheet" href="assets/css/anujkhadka.css" />
+
+  <!-- Firebase  -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+
+  <style>
+    .contact-alert {
+      width: 100%;
+      background: #f85c70 !important;
+      padding: 10px 20px;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <header class="header">
+    <div class="container">
+      <ul class="social-icons pt-3">
+        <li class="social-item">
+          <a class="social-link text-light" href="https://linkedin.com/in/anuj-khadka"><i class="ti-linkedin"
+              aria-hidden="true"></i></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link text-light" href="https://github.com/Anuj-Khadka"><i class="ti-github"
+              aria-hidden="true"></i></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link text-light" href="https://facebook.com/anujkhadka008"><i class="ti-facebook"
+              aria-hidden="true"></i></a>
+        </li>
+        <!-- <li class="social-item"><a class="social-link text-light" href="https://instagram.com/anuj_khadka008"><i
+                            class="ti-instagram" aria-hidden="true"></i></a></li> -->
+        <li class="social-item">
+          <a class="social-link text-light" href="https://www.youtube.com/channel/UCRgyCn-Yc1ssKo9xr6I9Zeg"><i
+              class="ti-youtube" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <div class="header-content">
+        <h4 class="header-subtitle">Hello, I am</h4>
+        <h1 class="header-title">Anuj Khadka</h1>
+        <h6 class="header-mono">Front end Developer | Designer</h6>
+        <button class="btn btn-primary px-3" onclick="contentWindow.print();">
+          <a class="text-white" href="../assets/resume/Anuj-Khadka_Resume.pdf" target="_blank" text-color-none><i
+              class="ti-printer pr-2"></i>Print Resume</a>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="510">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav brand">
+          <img src="assets/imgs/avatar.jpg" alt="anuj-khadka" class="brand-img" />
+          <li class="brand-txt">
+            <h5 class="brand-title">Anuj Khadka</h5>
+            <div class="brand-subtitle">Web Designer | Developer</div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hire" class="nav-link">Hire</a>
+          </li>
+          <li class="nav-item last-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div id="about" class="row about-section">
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">Who am I ?</h3>
+        <span class="line mb-5"></span>
+        <h5 class="mb-3">
+          A Web Designer / Developer Located In Our Lovely Earth
+        </h5>
+        <p class="mt-20">
+          Highly motivated student with a passion for learning, effective
+          communication, problem-solving, and time management skills. Seeking
+          opportunities for growth and development. Currently dedicated to
+          achieving excellence.
+        </p>
+        <!-- <button class="btn btn-outline-danger"><a class="text-inherit" href="../assets/resume/Anuj-Khadka_Resume.pdf" download target="_blank" text-color-none><i class="icon-down-circled2 "></i>Download My CV</a></button> -->
+      </div>
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">Personal Info</h3>
+        <span class="line mb-5"></span>
+        <ul class="mt40 info list-unstyled">
+          <li><span>Birthdate</span> : 12/08/2005</li>
+          <li><span>Email</span> : anujkhadka008@gmail.com</li>
+          <li><span>Phone</span> : +1 (862) 285-0239</li>
+          <li><span>Address</span> : Caldwell, New Jersey, USA</li>
+        </ul>
+        <!-- <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://linkedin.com/in/anuj-khadka"><i
+                                class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/Anuj-Khadka"><i
+                                class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://facebook.com/anujkhadka008"><i
+                                class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://instagram.com/anuj_khadka008"><i
+                                class="ti-instagram" aria-hidden="true"></i></a></li>
+                </ul> -->
+      </div>
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">My Expertise</h3>
+        <span class="line mb-5"></span>
+        <div class="row">
+          <div class="col-1 text-danger pt-1">
+            <i class="ti-layout icon-lg"></i>
+          </div>
+          <div class="col-10 ml-auto mr-3">
+            <h6>Web Development</h6>
+            <p class="subtitle">
+              Try to give a different prospective to the products.
+            </p>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 text-danger pt-1">
+            <i class="ti-paint-bucket icon-lg"></i>
+          </div>
+          <div class="col-10 ml-auto mr-3">
+            <h6>Product Design</h6>
+            <p class="subtitle">Help you bring your thoughts to reality.</p>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 text-danger pt-1">
+            <i class="ti-book icon-lg"></i>
+          </div>
+          <div class="col-10 ml-auto mr-3">
+            <h6>Home Tutoring</h6>
+            <p class="subtitle">When you teach, you learn more.</p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Resume Section-->
+  <section class="section" id="resume">
+    <div class="container">
+      <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <div class="mt-2">
+                <h4>Experiences</h4>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="title text-danger">2022 - 2023</h6>
+              <h6><a href="https://thetwl.org">Together We Learn</a></h6>
+              <p>Vice President</p>
+              <p class="subtitle">
+                Built Nepalʼs first romanized chatbot with 1000+ active users;
+                wrote & sent 15+ newsletters; developed and maintained
+                website; recruited 80+ general members increasing the
+                community's membership by 30% in 3 months; actively
+                participated in 10+ brainstorming sessions bringing various
+                new projects on board
+              </p>
+              <hr />
+              <!-- <h6 class="title text-danger">2022 - Present</h6>
+                            <h6><a href="https://padamna.com">Padhamna</a></h6>
+                            <P>Front-end Developer</P>
+                            <P class="subtitle">Joined Padhamna as a tutor for classes 11 and 12, teaching virtually,
+                                and developer working around product development team</P>
+                            <hr> -->
+              <h6 class="title text-danger">2020 - 2023</h6>
+              <h6><a href="https://theclassnote.org">The Class Note</a></h6>
+              <p>Admin &amp; Content Creator</p>
+              <p class="subtitle">
+                Led team of 10+ members to impart academic & general knowledge
+                among 14,000 community members; clarified 100+ doubts and
+                educational queries of students; created 100+ content posts
+                for students to learn better & inspired with real-life
+                examples
+              </p>
+              <hr />
+              <h6 class="title text-danger">2020 - 2021</h6>
+              <h6><a href="">Self-employed</a></h6>
+              <p>Home Tutor</p>
+              <p class="subtitle">
+                Provided support to the seventh graders with particularly
+                difficult math and science concepts; helped a third grader to
+                acknowledge the curriculum and overall syllabus; demystified
+                learning and supported an orphan K.G. child
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <div class="mt-2">
+                <h4>Education</h4>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- <h6 class="title text-danger">2023 - </h6>
+                            <P>B.E Computer Engineering</P>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
+                            <hr> -->
+              <h6 class="title text-danger">2023 - 2027</h6>
+              <p class="mb-0">
+                <b>Caldwell University</b>, Undergraduate Degree
+              </p>
+              <p class="subtitle">Major in Computer Science</p>
+              <hr />
+              <h6 class="title text-danger">2020 - 2022</h6>
+              <p class="mb-0">
+                <b>Capital College and Research Center</b>, High School
+              </p>
+              <p class="subtitle">
+                Area of Science with Addition of Computer Science
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <div class="pull-left">
+                <h4 class="mt-2">Skills</h4>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="card-body pb-2">
+              <h6>HTML5, CSS3, SASS &amp; Bootstrap</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>JavaScript</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>React</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>Figma &amp; Canva</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>Wordpress</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>C</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>Python</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>Flask</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="pull-left">
+                <h4 class="mt-2">Languages</h4>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="card-body pb-2">
+              <h6>Nepali</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6>English</h6>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter Section  -->
+  <section class="section bg-dark text-center">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-5 text-right text-light border-right py-3">
+              <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+            </div>
+            <div class="col-7 text-left py-3">
+              <h1 class="text-danger font-weight-bold font40">200+</h1>
+              <p class="text-light mb-1">Hours Worked</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-5 text-right text-light border-right py-3">
+              <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+            </div>
+            <div class="col-7 text-left py-3">
+              <h1 class="text-danger font-weight-bold font40">01</h1>
+              <p class="text-light mb-1">Research Paper</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-5 text-right text-light border-right py-3">
+              <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+            </div>
+            <div class="col-7 text-left py-3">
+              <h1 class="text-danger font-weight-bold font40">25+</h1>
+              <p class="text-light mb-1">Projects Finished</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-5 text-right text-light border-right py-3">
+              <div class="m-auto">
+                <i class="ti-heart-broken icon-xl"></i>
+              </div>
+            </div>
+            <div class="col-7 text-left py-3">
+              <h1 class="text-danger font-weight-bold font40">200</h1>
+              <p class="text-light mb-1">Coffee Drinked</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+      <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+      <div class="portfolio">
+        <div class="filters">
+          <a href="#" data-filter=".new" class="active"> New </a>
+          <a href="#" data-filter=".web"> Web </a>
+          <a href="#" data-filter=".design"> Design </a>
+        </div>
+        <div class="portfolio-container">
+          <div class="col-md-6 col-lg-4 new web">
+            <div class="portfolio-item">
+              <img src="assets/imgs//projects/jelly.png" class="img-fluid" alt="anuj-khadka-jelly" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/jelly.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Jelly</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/jelly" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/jelly" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 new web">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/memorivise.png" class="img-fluid" alt="anuj-khadka-memorivise" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/memorivise.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Memorivise</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://memorivise.com" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/memorivise" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 new web">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/mgc.png" class="img-fluid" alt="anuj-khadka-mgc.png" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/mgc.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Music Genre Classifier</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2"
+                        href="https://github.com/Anuj-Khadka/Music-Streaming-App-Genre-Classification" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2"
+                        href="https://github.com/Anuj-Khadka/Music-Streaming-App-Genre-Classification" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/jovai.png" class="img-fluid" alt="anuj-khadka-Jov.ai" />
+              <div class="content-holder">
+                <!-- <a class="img-popup" href="assets/imgs/projects/jovai.png">Jov.ai</a> -->
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">JovAi</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2"
+                        href="https://github.com/Anuj-Khadka/Music-Streaming-App-Genre-Classification" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2"
+                        href="https://github.com/Anuj-Khadka/Music-Streaming-App-Genre-Classification" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/frida.png" class="img-fluid" alt="anuj-khadka-frida" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/frida.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Frida</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Frida" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Frida" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/twl.png" class="img-fluid" alt="anuj-khadka-Together We Learn" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/twl.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Together We Learn</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://thetwl.org" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://thetwl.org" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/kinmel.png" class="img-fluid" alt="anuj-khadka-kinmel" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/kinmel.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Kinmel</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://hamrokinmel.netlify.app" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Kinmel" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/reacttodo.png" class="img-fluid" alt="anuj-khadka-reacttodo" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/reacttodo.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">React Toodoos</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://react-toodoos.netlify.app/" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/react-todo-app" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/weirdrecipe.png" class="img-fluid" alt="anuj-khadka-weirdrecipe.png" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/weirdrecipe.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Weird Recipe</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://weird-recipe.netlify.app" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/react-recipe-app" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/wiki.jpg" class="img-fluid" alt="anuj-khadka-wiki" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/wiki.jpg"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Wiki</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/Wiki" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/wiki" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/essay-comp.png" class="img-fluid" alt="anuj-khadka-essay-comp" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/essay-comp.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Essay Writing Competition</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://essay-competition.thetwl.org/" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/essay-competition"
+                        target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web new">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/mathify.png" class="img-fluid" alt="anuj-khadka-mathify.png" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/mathify.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Mathify</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://themathify.netlify.app/" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/mathify" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 new web">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/setbootstrap.PNG" class="img-fluid" alt="anuj-khadka-setbootstrap" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/setbootstrap.PNG"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Set boootstrapy</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://github.com/anuj-khadka/Wiki" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/wiki" target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web">
+            <div class="portfolio-item">
+              <img src="assets/imgs//projects/google.PNG" class="img-fluid" alt="anuj-khadka-Google Advance Clone" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs//projects/google.PNG"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Google Home Clone</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Google-Landing-Page"
+                        target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Google-Landing-Page"
+                        target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 web">
+            <div class="portfolio-item">
+              <img src="assets/imgs/projects/facebook.PNG" class="img-fluid" alt="anuj-khadka-Facebook Login Clone" />
+              <div class="content-holder">
+                <a class="img-popup" href="assets/imgs/projects/facebook.PNG"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Google Home Clone</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="https://facebooklogin-frontend.netlify.app/" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                      <a class="text-white mx-2" href="https://github.com/Anuj-Khadka/Facebook-Login-Page-"
+                        target="_blank">
+                        <i class="ti-github"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 design new">
+            <div class="portfolio-item">
+              <img src="./assets/imgs/projects/Searchify.png" class="img-fluid" alt="Proposal Letter - TWL" />
+              <div class="content-holder">
+                <a class="img-popup" href="./assets/imgs/projects/Searchify.png"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Searchify</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2"
+                        href="https://www.canva.com/design/DAFbx5wcxPw/1NVmExrzgB_xHBb7goMhuQ/watch?utm_content=DAFbx5wcxPw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                        target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 design new">
+            <div class="portfolio-item">
+              <img src="./assets/imgs/projects/Proposal Letter.PNG" class="img-fluid" alt="Proposal Letter - TWL" />
+              <div class="content-holder">
+                <a class="img-popup" href="./assets/imgs/projects/Proposal Letter.PNG"></a>
+                <div class="text-holder">
+                  <h6 class="title">
+                    <b class="my-3">Proposal Letter - TWL</b>
+                    <div class="project-links my-3">
+                      <a class="text-white mx-2" href="#" target="_blank">
+                        <i class="ti-link"></i>
+                      </a>
+                    </div>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of portfolio section -->
+
+  <!-- Hire Section  -->
+  <section class="section bg-dark py-5" id="hire">
+    <div class="container text-center">
+      <h2 class="text-light mb-5 font-weight-normal">
+        I Am Available For Collaboration
+      </h2>
+      <a href="https://linkedin.com/in/anuj-khadka"><button class="btn bg-primary w-lg">Add me</button></a>
+    </div>
+  </section>
+
+  <!-- Service Section  -->
+  <section class="section" id="service">
+    <div class="container">
+      <h2 class="mb-5 pb-4"><span class="text-danger">Wall</span> of Fame</h2>
+      <div class="row">
+        <!-- <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-light">Rastrapati Bigyan Pradarshan</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                                <img src="../assets/imgs/rastrapati.jpg" alt="Rastrapati Bigyan Pradarshan" width="100%">
+                        </div>
+                    </div>
+                </div> -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">Meta Front-end Developer</h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" href="assets/imgs/honors/MetaFrontendDeveloper-1.png"  target="_blank">
+                <img src="./assets/imgs/honors/MetaFrontendDeveloper-1.png" alt="Meta Frontend Developer"
+                  width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">NAST</h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" href="assets/imgs/honors/NAST.jpg"  target="_blank">
+                <img src="./assets/imgs/honors/NAST.jpg" alt="nast" width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">Python for DS and AI</h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" href="assets/imgs/honors/Python for DS and AI.PNG"  target="_blank">
+                <img src="./assets/imgs/honors/Python for DS and AI.PNG" alt="python" width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4 col-sm-12">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-light">Intro to Social Marketing</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                                <img src="../assets/imgs/Intro to Social Marketing.PNG" alt="Intro to Social Marketing" sizes="(max-width: 480px) 100vw, 
+                            (max-width: 1024px) 50vw, 
+                            33vw" srcset="" height="100%" width="100%">
+                        </div>
+                    </div>
+                </div> -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">
+                NASA SpaceApp Challenge
+              </h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" href="assets/imgs/honors/Space App Challenge.PNG"  target="_blank">
+                <img src="./assets/imgs/honors/Space App Challenge.PNG" alt="space app Challenge" width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">
+                Together We Learn Facilitator
+              </h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" target="_blank" href="assets/imgs/honors/TWL_CS.png">
+                <img src="./assets/imgs/honors/TWL_CS.png" alt="space app Challenge" width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-5">
+            <div class="card-header has-icon">
+              <i class="ti-pin-alt text-danger" aria-hidden="true"></i>
+            </div>
+            <div class="card-body px-4 py-3">
+              <h5 class="mb-3 card-title text-light">
+                Guniess World Record Event
+              </h5>
+              <!-- <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
+                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
+                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
+                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P> -->
+              <a class="img-popup" href="assets/imgs/honors/Guvi Certification.png" target="_blank">
+                <img src="./assets/imgs/honors/Guvi Certification.png" alt="space app Challenge" width="100%" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Explicabo illo</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Porro Quisqua</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a>
+                        </p>
+                        
+                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+-->
+
+  <div class="section contact" id="contact">
+    <!-- <div id="map" class="map"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact-form-card">
+            <h4 class="contact-title">Send a message</h4>
+            <div class="contact-alert">
+              Message sent successfully. Thank you so much for contacting.
+            </div>
+            <form id="contact-form">
+              <div class="form-group">
+                <input class="form-control" type="text" id="name" placeholder="Name *" required />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" id="email-id" placeholder="Email *" required />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="contact-message" placeholder=" Message *" rows="7"
+                  required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-info-card">
+            <h4 class="contact-title">Get in touch</h4>
+            <div class="row mb-2">
+              <div class="col-1 pt-1 mr-1">
+                <i class="ti-mobile icon-md"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="d-inline">
+                  Phone : <br />
+                  <span class="text-muted"> +1 (862) 285 0239</span>
+                </h6>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-1 pt-1 mr-1">
+                <i class="ti-map-alt icon-md"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="d-inline">
+                  Address :<br />
+                  <span class="text-muted">Caldwell, NJ, USA</span>
+                </h6>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-1 pt-1 mr-1">
+                <i class="ti-envelope icon-md"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="d-inline">
+                  Email :<br />
+                  <span class="text-muted">anujkhadka008@gmail.com</span>
+                </h6>
+              </div>
+            </div>
+            <ul class="social-icons pt-4">
+              <li class="social-item">
+                <a class="social-link text-light" href="https://linkedin.com/in/anuj-khadka"><i class="ti-linkedin"
+                    aria-hidden="true"></i></a>
+              </li>
+              <li class="social-item">
+                <a class="social-link text-light" href="https://github.com/Anuj-Khadka"><i class="ti-github"
+                    aria-hidden="true"></i></a>
+              </li>
+              <li class="social-item">
+                <a class="social-link text-light" href="https://facebook.com/anujkhadka008"><i class="ti-facebook"
+                    aria-hidden="true"></i></a>
+              </li>
+              <!--
+                <li class="social-item">
+                  <a
+                    class="social-link text-light"
+                    href="https://instagram.com/anuj_khadka008"
+                    ><i class="ti-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                -->
+              <li class="social-item">
+                <a class="social-link text-light" href="https://www.youtube.com/channel/UCRgyCn-Yc1ssKo9xr6I9Zeg"><i
+                    class="ti-youtube" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer py-3">
+    <div class="container">
+      <p class="small mb-0 text-light">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Created With <i class="ti-heart text-danger"></i> By
+        <a href="http://linked.com/in/anuj-khadka" target="_blank"><span class="text-danger" title="anuj-khadka">Anuj
+            Khadka</span></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+  <!-- bootstrap 3 affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Isotope  -->
+  <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+  <!-- Google mpas -->
+  <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
+
+  <!-- anujkhadka js -->
+  <script src="assets/js/anujkhadka.js"></script>
+  <script type="module" src="assets/js/contact.js"></script>
+
+  <!-- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.22.2/firebase-app.js" integrity="sha512-/+RPWdAJCTSd6HCntOb8KmE3mxlfbrBnob28FpsIXCH1QmkvsdOk047quuh0j/a3TQCkUwJvCOJI0tmADcOAbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+
+</html>
